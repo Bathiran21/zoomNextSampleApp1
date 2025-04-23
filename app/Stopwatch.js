@@ -23,7 +23,7 @@ export default function Stopwatch() {
       setStatus('Recording Started');
     } else {
       clearInterval(intervalRef.current);
-      if (seconds !== 0) setStatus('Timer Paused');
+      if (seconds !== 0) setStatus('Recording Paused');
     }
   
     return () => clearInterval(intervalRef.current);

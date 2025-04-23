@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {headers} from "next/headers";
 import Zoom from "@/app/zoom";
+import Stopwatch from "./Stopwatch.js";
 
 export default async function Home() {
     const headersList = await headers()
@@ -41,6 +42,7 @@ export default async function Home() {
                     </p>
                     <span> Running in {isZoom ? "Zoom" : "Browser"} </span>
 
+                <Stopwatch />
                 </div>
 
                 <Zoom />
